@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.3.2",
+    "@material-ui/icons": "^3.0.1",
     "@types/redux-logger": "^3.0.6",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
@@ -10,6 +12,7 @@
     "react-scripts-ts": "3.1.0",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.2",
     "redux-thunk": "^2.3.0",
     "typescript-fsa": "^3.0.0-beta-2",
     "typescript-fsa-reducers": "^1.0.0"
@@ -21,11 +24,14 @@
     "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.7",
+    "@types/jest": "^23.3.8",
     "@types/node": "^10.12.0",
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
     "@types/react-redux": "^6.0.9",
+    "enzyme": "^3.7.0",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
     "typescript": "^3.1.3"
   }
 }
