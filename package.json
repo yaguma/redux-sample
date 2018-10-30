@@ -21,6 +21,8 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
+    "jest": "jest",
+    "tsc": "tsc",
     "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
@@ -30,8 +32,6 @@
     "@types/react-dom": "^16.0.9",
     "@types/react-redux": "^6.0.9",
     "enzyme": "^3.7.0",
-    "jest": "^23.6.0",
-    "ts-jest": "^23.10.4",
     "typescript": "^3.1.3"
   }
 }

@@ -4,7 +4,7 @@ import { hogeAsyncActions } from '../actions/hogeAsyncActions';
 
 export interface IHogeState {
   email: string;
-  error: object;
+  errors: object;
   isFetching: boolean;
   name: string;
   params: object;
@@ -13,7 +13,7 @@ export interface IHogeState {
 
 const initialState: IHogeState = {
   email: '',
-  error: {},
+  errors: {},
   isFetching: false,
   name: '',
   params: {},
