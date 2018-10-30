@@ -19,6 +19,7 @@ export class HogeComponent extends React.Component<HogeProps> {
       <div>
         <div className="field">
           <input
+            id="input-text-name"
             type="text"
             placeholder="name"
             value={this.props.name}
@@ -27,13 +28,14 @@ export class HogeComponent extends React.Component<HogeProps> {
         </div>
         <div className="field">
           <input
+            id="input-text-email"
             type="email"
             placeholder="email"
             value={this.props.email}
             onChange={updateEmail}
           />
         </div>
-        <div>{this.props.name + ":" + this.props.email}</div>
+        <div id="output">{this.props.name + ":" + this.props.email}</div>
       </div>
     );
     }
