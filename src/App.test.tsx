@@ -1,6 +1,6 @@
-import * as React from 'react'
-import Enzyme, { configure, shallow } from 'enzyme'
+import { configure, shallow } from 'enzyme'
 import * as Adapter from 'enzyme-adapter-react-16'
+import * as React from 'react'
 import {HogeComponent} from './components/hogeComponent'
 ​
 configure({ adapter: new Adapter() });
@@ -9,7 +9,9 @@ function setup() {
   const props = {
     email:'email',
     name:'name',
-    startLogin:jest.fn()
+    startLogin:jest.fn(),
+    updateEmail:jest.fn(),
+    updateName:jest.fn(),
   };
 ​
   const dom = <HogeComponent {...props} />;

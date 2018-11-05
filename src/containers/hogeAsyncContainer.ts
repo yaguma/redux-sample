@@ -3,7 +3,7 @@ import { AnyAction, Dispatch } from 'redux';
 import { Action } from 'typescript-fsa';
 import { hogeAsyncActions } from '../actions/hogeAsyncActions';
 import { HogeComponent } from '../components/hogeComponent';
-import { IAppState } from '../store';
+import { IAppState } from '../index';
 
 
 export interface IHogeAsyncActions {

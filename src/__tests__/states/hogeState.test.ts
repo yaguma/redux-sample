@@ -1,5 +1,5 @@
+import {hogeAsyncActions} from '../../actions/hogeAsyncActions';
 import {hogeAsyncReducers, IHogeState} from '../../states/hogeAsyncState';
-import { hogeAsyncActions } from '../../actions/hogeAsyncActions';
 
 const initialState:IHogeState = {
   email: '',
@@ -31,7 +31,7 @@ describe('store/hogeAsyncState', () => {
     expect(
       hogeAsyncReducers(
         initialState,
-        {type:'ACTIONS_SUBMIT_DONE', payload:{result:{email:'email', name:'name'}})
+        hogeAsyncActions.doneLogin)
       ).toEqual(
         Object.assign({},
           initialState,
@@ -42,7 +42,7 @@ describe('store/hogeAsyncState', () => {
     expect(
       hogeAsyncReducers(
         initialState,
-        {type:'ACTIONS_SUBMIT_FAILED', payload:{error:'error'})
+        hogeAsyncActions.failedLogin)
       ).toEqual(
         Object.assign({},
           initialState,
@@ -53,7 +53,7 @@ describe('store/hogeAsyncState', () => {
     expect(
       hogeAsyncReducers(
         initialState,
-        {type:'ACTIONS_UPDATE_EMAIL', payload:'email')
+        hogeAsyncActions.updateEmail)
       ).toEqual(
         Object.assign({},
           initialState,
@@ -64,7 +64,7 @@ describe('store/hogeAsyncState', () => {
     expect(
       hogeAsyncReducers(
         initialState,
-        {type:'ACTIONS_UPDATE_NAME', payload:'name')
+        hogeAsyncActions.updateName)
       ).toEqual(
         Object.assign({},
           initialState,
